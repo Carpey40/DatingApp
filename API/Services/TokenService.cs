@@ -17,7 +17,7 @@ namespace API.Services
         {
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
         }
-        //OAUTH2 - Openid-Connect
+        //OAUTH2 / Openid-Connect (Google, FB)
         public string CreateToken(AppUser user)
         {
             //Ansprüche hinzufügen
